@@ -6,6 +6,7 @@ class PasswordGenerator extends React.Component{
     constructor(props){
         super(props);
 
+        // initial state of num == 4
         this.state = {
             num:4,
         }
@@ -17,6 +18,7 @@ class PasswordGenerator extends React.Component{
 
     }
 
+    // get the length of expected password
     getRange(value){
         let range = value;
         document.getElementById("numberRange").innerHTML = range;
@@ -27,6 +29,7 @@ class PasswordGenerator extends React.Component{
         return this.state.num;
    }
 
+   // function that generates the password
    generatePassword(){
     const digitCase = document.querySelector('#dig').checked;
     const upCase = document.querySelector('#up').checked;
@@ -71,7 +74,7 @@ getChars(length, isUpper, isLower, isDigit, isSymbol) {
     return password;
 }
 
-
+// function to copy text to clipboard
 copyText(){
     let r = document.createRange();
     r.selectNode(document.getElementById('gpassword'));
