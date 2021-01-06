@@ -8,7 +8,7 @@ function Card(props){
                             
                  <div id="toggle">
                   <label className="switch">
-                  <input type="checkbox" onClick={props.type} id="up" />
+                  <input type="checkbox" onClick={props.type} />
                  <span className="slider round"></span>
                 </label>
                </div>

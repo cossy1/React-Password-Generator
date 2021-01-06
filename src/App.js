@@ -1,6 +1,6 @@
 import './App.css';
 import './index.css';
-import React, { useState, useRef } from "react";
+import React, { useState } from "react";
 import Title from './components/Title';
 import ResultField from './components/ResultField'
 import GenerateBtn from './components/GenerateBtn';
@@ -16,8 +16,6 @@ function App() {
   let [LowerCase, setLowerCase] = useState(false);
   let [SymbolCase, setSymbolCase] = useState(false);
   let [DigitCase, setDigitCase] = useState(false);
-  const pass = useRef(Password);
-
 
   function addUpper(){
       setUpperCase(UpperCase = !UpperCase)
